@@ -5,7 +5,8 @@
 let date = 'Monday 2019-03-18';
 let time = '10:05:34 AM';
 let input = require('readline-sync');
-let astronautCount = (Number(input.question("How many astronauts will there be participating in this mission?")));
+let astronautCount = Number(input.question("How many astronauts will there be participating in this mission?"));
+console.clear();
 let astronautstatus = 'ready';
 let averageAstronautMassKg = 80.7;
 let crewMassKg = astronautCount * averageAstronautMassKg;
